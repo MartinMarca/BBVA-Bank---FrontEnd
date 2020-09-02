@@ -1,0 +1,26 @@
+body{
+	background-color:#313131; 
+    	color:#C6D3D9;
+	
+}
+.fondo{
+	background: url("../img/fondo.jpg");
+	height:100vh; 
+	background-size: cover;
+	background-position: center;
+}
+.fuenteNavBar{
+	font-family: helvetica;
+	font-weight: bold;
+}
+
+.piePagina{
+	background-color:#004481;
+	color:#FFFFFF; 
+	width:100%;
+	height:300px;
+}
+.galeria img {
+     box-shadow: 0 8px 10px -4px rgba(0,0,0,.6);
+     border-radius: 15px;
+}

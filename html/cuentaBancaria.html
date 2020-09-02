@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>BBVA Bank</title>
+    <script src="../js/validaciones.js"></script>
+
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+
+<body>
+  <div class="container ">
+    <div class="row">
+      <div>
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark container fuenteNavBar fixed-top ">
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="navbar-brand" href="home.html">
+              <img src="../img/logo.png" style="height: 40px" alt="logo">
+          </a>
+
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav text-center mr-auto ml-auto">
+              <li class="nav-item">
+                <a class="nav-link " href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="cuentaBancaria.html">Crea tu cuenta bancaria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="criptoNews.html">Criptomonedas News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pqBBVA.html">¿Por qué BBVA?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        </nav>
+      </div>
+
+      <div >
+          <div class="row">
+              <div class="container fondo d-flex justify-content-end align-items-center">
+                  <div class="d-none d-lg-block">
+                      <img style="padding-right:125px;margin-left: 125px ; padding-top: 50px;" src="../img/crearCuenta.jpg" width="500px">
+                  </div>
+                  <h1 class="display-1">ÚNETE a nosotros</h1>
+              </div>
+          </div>
+      </div>
+
+
+    </div>
+    <div class="row">
+      <div class="col-sm-0 col-md-0 col-lg-2 col-xl-2">
+
+      </div>
+
+      <div class="container col-sm-12 col-md-12 col-lg-6 col-xl-6"><br><br><br>
+          <p style="font-size: 2rem;">Ingresa tus datos para crear tu cuenta:</p><br>
+
+        <form onsubmit="return registroExitosoCuenta()">
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nnombre" placeholder="Nombre" class="form-control " onkeypress="return soloLetras(event)"><br><br>
+
+          <label for="apellido">Apellido:</label><br>
+          <input type="text" id="apellido" name="aapellido" placeholder="Apellido" class="form-control" onkeypress="return soloLetras(event)"><br><br>
+
+          <label for="dni" >DNI:</label><br>
+          <input type="text" id="dni" name="ddni" placeholder="Dni" class="form-control" onkeypress="return soloNumeros(event)"><br><br>
+
+          <label for="fecha_nac">Fecha nacimiento:</label><br>
+          <input type="text" id="fecha_nac" name="ffecha_nac" placeholder="dd/mm/aaaa" class="form-control"><br><br>
+
+          <label for="email">Correo electrónico:</label><br>
+          <input type="text" id="email" name="eemail" placeholder="Email" class="form-control" onkeypress="return validarEmail(event)"><br><br>
+
+          <label for="clave">Clave para tu cuenta:</label><br>
+          <input type="text" id="clave" name="cclave" placeholder="Clave de 4 dígitos" class="form-control" onkeypress="return soloNumeros(event)"><br><br>
+
+          <label>Tipo de cuenta</label><br><br>
+          <input type="radio" id="cta_cte" name="tipo_cta" value="cuenta corriente">
+          <label for="cuenta corriente">Cuenta corriente</label><br>
+          <input type="radio" id="caja_ahorro" name="tipo_cta" value="caja de ahorro">
+          <label for="caja de ahorro">Caja de ahorro</label><br><br>
+
+          <input type="submit" class="btn btn-block btn-outline-light" value="Enviar información">
+        </form>
+      </div>
+
+      <div class="col-sm-0 col-md-0 col-lg-4 col-xl-4">
+        <img style="margin-left: 100px; margin-top:100px" width="270px" src="../img/walletBitcoin.png" alt="crear cuenta" title="crear cuenta">
+        <img src="../img/registro.png" id="image" style="margin-top:500px" alt="registro">
+      </div>
+    </div>
+  </div>
+  <br><br>
+	<div class="piePagina">
+	  <img src="../img/logo.png" alt="logo BBVA" title="logo BBVA" style="padding-left:100px; padding-top: 50px;" height="135px"><br><br><br>
+	  <div>
+	    <p style="color: white; padding-left:100px;">
+	      Aragón 1009 Rafaela, Santa fe, Argentina <br>
+	      ®BBVA Banco de Bitcoins Virtual y de Ahorro <br>
+	      BBVAcriptoBANK@gmail.com <br>
+	      +54 3492112233
+	    </p>
+	  </div>
+	</div>
+	  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="../Bootstrap/js/bootstrap.min.js"></script>
+	</body>
+	</html>

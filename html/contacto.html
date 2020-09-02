@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>BBVA Bank</title>
+	<script src="../js/validaciones.js"></script>
+	<link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+	
+	<div class="container">
+		<nav class="navbar navbar-expand-lg bg-primary navbar-dark container fuenteNavBar fixed-top ">
+	
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<a class="navbar-brand" href="home.html">
+				<img src="../img/logo.png" style="height: 40px" alt="logo">
+			</a>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<ul class="navbar-nav text-center mr-auto ml-auto">
+				<li class="nav-item">
+					<a class="nav-link " href="home.html">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="cuentaBancaria.html">Crea tu cuenta bancaria</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="criptoNews.html">Criptomonedas News</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " href="pqBBVA.html">¿Por qué BBVA?</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" href="contacto.html">Contacto</a>
+				</li>
+				</ul>
+			</div>
+		</nav>
+	</div>	
+
+	<div class="container fondo d-flex justify-content-end align-items-center ">
+	  <h1 class="display-2 pt-5">Contacto</h1>
+	</div>
+	<br><br>
+
+	<div class="container">
+        <h2 class="display-4">Contáctanos...</h2>    
+        <p style="font-size: 2rem">
+          Si deseas presentarte personalmente para hablar con nosotros lo podés hacer en: <br>
+          <b>Aragón 1009 Rafaela, Santa fe, Argentina.</b> <br><br>
+          Si nos querés contactar desde la comodidad de tu casa nos podés enviar un email a: <br>
+          <b>BBVAcriptoBANK@gmail.com</b> <br><br>
+          O simplemente llamando al siguiente número: <br>
+          <b>+54 3492112233</b><br><br><br><br>         
+		</p>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+					<h1 class="display-4">Escríbenos un mensaje</h1>
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+					<form onsubmit="return registroExitosoContacto()">
+						<label for="nombre">Nombre:</label><br>
+          				<input type="text" id="nombre" name="nnombre" placeholder="Nombre" class="form-control " onkeypress="return soloLetras(event)"><br><br>
+						<label for="email">Correo electrónico:</label><br>
+						<input type="text" id="email" name="eemail" placeholder="Email" class="form-control" onkeypress="return validarEmail(event)"><br><br>
+						<label for="textarea">Mensaje:</label><br>
+						<textarea id="textArea" rows="6" cols="50" class="form-control" placeholder="Escribe tu mensaje aquí..."></textarea><br><br>
+						<input type="submit" class="btn btn-block btn-outline-light" value="Enviar Mensaje">
+					</form>
+				</div>
+			</div>
+		</div>
+		<br><br><br>
+		<div>
+			<p style="font-size: 1.5rem">
+			También estamos en redes sociales:<br><br>
+            <p style="font-size: 2rem; color: royalblue;">Facebook</p> <a href="www.facebook.com/BBVAcriptoBANK">www.facebook.com/BBVAcriptoBANK</a>
+            <p style="font-size: 2rem; color: rgb(233, 27, 44);">YouTube</p> <a href="www.youtube.com/BBVAcriptoBANK">www.youtube.com/BBVAcriptoBANK</a>
+            <p style="font-size: 2rem; color: rgb(225, 65, 212);">Instagram</p> <a href="www.instagram.com/BBVAcriptoBANK">www.instagram.com/BBVAcriptoBANK</a>
+            <p style="font-size: 2rem; color: rgb(20, 157, 221);">Twitter</p> <a href="www.twitter.com/BBVAcriptoBANK">www.twitter.com/BBVAcriptoBANK</a>
+			</p>
+		</div>			
+	</div>
+	<br>
+	
+    <br><br>
+	<div class="piePagina">
+		<img src="../img/logo.png" alt="logo BBVA" title="logo BBVA" style="padding-left:100px; padding-top: 50px;" height="135px"><br><br><br>
+		<div>
+			<p style="color: white; padding-left:100px;">
+				Aragón 1009 Rafaela, Santa fe, Argentina <br>
+                ®BBVA Banco de Bitcoins Virtual y de Ahorro <br>
+                BBVAcriptoBANK@gmail.com <br>
+				+54 3492112233
+			</p>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="../Bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
